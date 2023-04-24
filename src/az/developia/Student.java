@@ -40,7 +40,11 @@ public String getLangs() {
 public void setLangs(String langs) {
 	this.langs = langs;
 }
-
+@Override
+public String toString() {
+	return "Student [name=" + name + ", surname=" + surname + ", birthday=" + birthday + ", sector=" + sector
+			+ ", langs=" + langs + "]";
+}
 
 
 

@@ -6,14 +6,15 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane minHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="az.developia.LoginController">
+<AnchorPane minHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.developia.LoginController">
    <children>
       <VBox prefHeight="250.0" prefWidth="542.0">
          <children>
@@ -133,5 +134,14 @@
             </HBox>
          </children>
       </VBox>
+      <TableView fx:id="studentsTable" layoutX="24.0" layoutY="264.0" prefHeight="200.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="studentNameC" prefWidth="102.40002059936523" text="Ad" />
+          <TableColumn fx:id="studentSurnameC" prefWidth="113.60003662109375" text="Soyad" />
+            <TableColumn fx:id="studentBdC" prefWidth="108.00001525878906" text="Təvəllüd" />
+            <TableColumn fx:id="studentSectorC" prefWidth="87.99993896484375" text="Sektor" />
+            <TableColumn fx:id="studentLangsC" prefWidth="92.00006103515625" text="Bildiyi dillər" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
