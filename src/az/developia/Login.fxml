@@ -130,17 +130,26 @@
                         <Insets left="22.0" top="7.0" />
                      </HBox.margin>
                   </Button>
+                  <Button mnemonicParsing="false" onAction="#deleteStudent" prefHeight="38.0" prefWidth="51.0" style="-fx-background-color: #ff0000;" text="Sil" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="12.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
                </children>
             </HBox>
          </children>
       </VBox>
-      <TableView fx:id="studentsTable" layoutX="24.0" layoutY="264.0" prefHeight="200.0" prefWidth="503.0">
+      <TableView fx:id="studentsTable" layoutY="263.0" prefHeight="237.0" prefWidth="542.0">
         <columns>
-          <TableColumn fx:id="studentNameC" prefWidth="102.40002059936523" text="Ad" />
-          <TableColumn fx:id="studentSurnameC" prefWidth="113.60003662109375" text="Soyad" />
-            <TableColumn fx:id="studentBdC" prefWidth="108.00001525878906" text="Təvəllüd" />
-            <TableColumn fx:id="studentSectorC" prefWidth="87.99993896484375" text="Sektor" />
-            <TableColumn fx:id="studentLangsC" prefWidth="92.00006103515625" text="Bildiyi dillər" />
+          <TableColumn fx:id="studentIdC" prefWidth="63.1999785900116" text="Id" />
+          <TableColumn fx:id="studentNameC" prefWidth="87.99999618530273" text="Ad" />
+            <TableColumn fx:id="studentSurnameC" prefWidth="103.20001220703125" text="Soyad" />
+            <TableColumn fx:id="studentSectorC" prefWidth="95.20002746582031" text="Təvəllüd" />
+            <TableColumn fx:id="studentSectorC" text="Sektor" />
+            <TableColumn fx:id="studentLangsC" prefWidth="112.00006103515625" text="Bildiyi dillər" />
         </columns>
       </TableView>
    </children>

@@ -62,6 +62,9 @@ public class LoginController implements Initializable {
 	private TableColumn<Student, String> studentSectorC;
 
 	@FXML
+	private TableColumn<Student, Integer> studentIdC;
+
+	@FXML
 	private TableColumn<Student, String> studentSurnameC;
 
 	@FXML
@@ -127,5 +130,10 @@ public class LoginController implements Initializable {
 		studentLangsC.setCellValueFactory(new PropertyValueFactory<>("langs"));
 
 		fillTable();
+	}
+	
+	public  void deleteStudent() {
+		Student s=studentsTable.getSelectionModel().getSelectedItem();
+		
 	}
 }
